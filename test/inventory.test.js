@@ -3,7 +3,7 @@ const { test } = require('node:test');
 const assert = require('node:assert/strict');
 
 const Product = require('../src/product.js');
-const InventoryService = require('../src/InventoryService');
+const InventoryService = require('../src/InventoryService.js');
 
 // Producto de prueba
 function createProduct(stock = 10) {

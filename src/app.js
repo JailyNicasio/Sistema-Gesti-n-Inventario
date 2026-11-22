@@ -1,10 +1,10 @@
-const Product = require('./src/product');
+const Product = require('./src/product.js');
 
 const InventoryRepository =
-    require('./src/InventoryRepository');
+    require('./src/InventoryRepository.js');
 
 const InventoryService =
-    require('./src/InventoryService');
+    require('./src/InventoryService.js');
 
 // Crear el repositorio
 const repository = new InventoryRepository();

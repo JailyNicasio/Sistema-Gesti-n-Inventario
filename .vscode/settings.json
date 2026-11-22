@@ -1,0 +1,14 @@
+{
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#b37594",
+        "titleBar.inactiveBackground": "#b37594",
+        "titleBar.activeForeground": "#000000",
+        "titleBar.inactiveForeground": "#262626"
+    },
+    "cSpell.words": [
+        "datos",
+        "devuelve",
+        "inventario",
+        "preparados"
+    ]
+}

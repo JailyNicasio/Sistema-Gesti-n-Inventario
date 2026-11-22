@@ -1,0 +1,9 @@
+{
+  "name": "sistema-inventario-tdd",
+  "version": "1.0.0",
+  "description": "Sistema de inventario desarrollado con TDD",
+  "main": "src/InventoryService.js",
+  "scripts": {
+    "test": "node --test"
+  }
+}

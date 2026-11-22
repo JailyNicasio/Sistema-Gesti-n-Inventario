@@ -20,7 +20,7 @@ class StubRepository {
     constructor(product = null) {
         this.product = product;
     }
-
+    // Buscar productos por códigos.
     findBySku(sku) {
         return this.product?.sku === sku
             ? this.product
@@ -147,3 +147,28 @@ test('Debe generar un error si el producto no existe', () => {
     );
 });
 
+// PRUEBA 9: Verificar el registro de eventos con MOCK
+test('Debe registrar un evento cuando se crea un producto', () => {
+
+    const mensajes = [];
+
+    const loggerMock = {
+        info(mensaje) {
+            mensajes.push(mensaje);
+        }
+    };
+
+    const repository = new MockRepository();
+    const inventory = new InventoryService(
+        repository,
+        loggerMock
+    );
+
+    const product = createProduct();
+
+    inventory.registerProduct(product);
+
+    assert.equal(mensajes.length, 1);
+    assert.equal(mensajes[0], 'Producto registrado');
+
+});
